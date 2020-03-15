@@ -1,0 +1,5 @@
+{
+  "users_table" : "CREATE TABLE IF NOT EXISTS users_table (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,chat_id INT,first_name VARCHAR(255),user_name VARCHAR(255));",
+  "messages_table" : "CREATE TABLE IF NOT EXISTS messages_table (id INT NOT NULL PRIMARY KEY,chat_id INT NOT NULL,text VARCHAR(255),photo VARCHAR(255),caption VARCHAR(255));",
+  "insert_user" : "INSERT INTO users_table (first_name, chat_id, user_name) VALUES(%s, %s, %s)"
+}
